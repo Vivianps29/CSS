@@ -1,0 +1,184 @@
+h1{
+    color: brown;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #d1b899; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p{
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+.fundo{
+    background-color: #ffffff; 
+    max-width: 1100px;
+    width: 92%; 
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+img{
+    height: auto;
+    width: 80%;
+    display: block;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 100%;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0%;
+    flex-wrap: wrap;
+    font-family: 'Times New Roman', Times, serif;
+    gap: 15px;
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #0a192f;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+nav ul li a:hover {
+    background-color: #b8926a;
+    color: #ffffff;
+}
+footer{
+    margin: 40px 0; 
+    padding: 20px; 
+    border-top: 1px solid #ccc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.dicas-viagem {
+    
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 5px solid brown;
+    margin: 50px 0;
+}
+.dicas-viagem ul ul li {
+    margin-bottom: 5px;
+    margin-left: 15px;
+    list-style-type: disc; 
+}
+
+.secao-formulario {
+    background-color: #f4f4f4;
+    padding: 40px;
+    margin: 40px auto;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.meu-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #0a192f;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input:focus, textarea:focus {
+    border-color: #b8926a;
+    outline: none;
+    box-shadow: 0 0 5px rgba(184, 146, 106, 0.5);
+}
+
+.botao-enviar {
+    background-color: #0a192f;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao-enviar:hover {
+    background-color: #b8926a;
+    transform: scale(1.02);
+}
+.container-dicas {
+    display: flex;
+    justify-content: space-between; 
+    gap: 40px;
+}
+
+.container-dicas ul {
+    flex: 1;
+    list-style-type: none;
+    padding: 0;
+}
+
+@media (max-width: 600px) {
+    .container-dicas {
+        flex-direction: column;
+    }
+}
+
+header {
+    display: flex;
+    align-items: center;  
+    justify-content: center; 
+    position: relative; 
+    height: 120px;
+    padding: 0 20px;
+}
+
+.logo-container {
+    position: absolute;
+    left: 20px;
+}
+
+.logo-img {
+    width: 80px;
+    height: auto;
+}
+.secao-video {
+    text-align: center; /* Centraliza o título h2 */
+    margin: 40px 0;    /* Dá espaço em cima e embaixo da seção */
+    padding: 20px;
+}
+
+.video-container {
+    max-width: 800px;  /* Largura máxima do vídeo */
+    margin: 0 auto;    /* Centraliza a caixa do vídeo na página */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Sombra para dar destaque */
+    border-radius: 10px; /* Bordas arredondadas */
+    overflow: hidden;  /* Garante que o vídeo respeite as bordas arredondadas */
+}
+
+.video-container iframe {
+    width: 100%;       /* O vídeo ocupa toda a largura da caixa (800px) */
+    height: 450px;     /* Altura proporcional */
+    display: block;
+}
