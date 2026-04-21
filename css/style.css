@@ -164,21 +164,46 @@ header {
     height: auto;
 }
 .secao-video {
-    text-align: center; /* Centraliza o título h2 */
-    margin: 40px 0;    /* Dá espaço em cima e embaixo da seção */
+    text-align: center;
+    margin: 40px 0; 
     padding: 20px;
 }
 
 .video-container {
-    max-width: 800px;  /* Largura máxima do vídeo */
-    margin: 0 auto;    /* Centraliza a caixa do vídeo na página */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Sombra para dar destaque */
-    border-radius: 10px; /* Bordas arredondadas */
-    overflow: hidden;  /* Garante que o vídeo respeite as bordas arredondadas */
+    max-width: 800px;  
+    margin: 0 auto; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+    border-radius: 10px; 
+    overflow: hidden;
 }
 
 .video-container iframe {
-    width: 100%;       /* O vídeo ocupa toda a largura da caixa (800px) */
-    height: 450px;     /* Altura proporcional */
+    width: 100%;
+    height: 450px;
     display: block;
+}
+
+.secao-formulario ~ footer,
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 120px;
+    padding: 0 20px;
+}
+
+/* Garante que a logo da reserva vá para o canto esquerdo igual no Egito */
+header .logo-container {
+    position: absolute !important;
+    left: 20px !important;
+    top: 50%;
+    transform: translateY(-50%); /* Centraliza verticalmente a logo no topo */
+}
+
+/* Ajuste para o h1 da reserva não ser empurrado */
+header h1 {
+    margin: 0;
+    text-align: center;
+    flex: 1;
 }
